@@ -53,6 +53,14 @@ class App extends Component {
             value={this.state.width}
             onChange={e => this.setState({ width: parseInt(e.target.value)})}
             />
+          <div>
+              <StackedBarGraph>
+                <DataPoint value={this.state.width} />
+                <DataPoint value={this.state.width} />
+                <DataPoint value={this.state.width} />
+                <DataPoint value={this.state.width} />
+              </StackedBarGraph>
+        </div>
         </div>
       </div>
     );
