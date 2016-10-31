@@ -4,6 +4,7 @@ import Immutable from 'immutable'
 import ProgressBar from './ProgressBar';
 import DataPoint from './DataPoint';
 import StackedBarGraph from './StackedBarGraph';
+import BarGraph from './BarGraph';
 
 class App extends Component {
   constructor(props) {
@@ -60,6 +61,14 @@ class App extends Component {
                 <DataPoint value={this.state.width} />
                 <DataPoint value={this.state.width} />
               </StackedBarGraph>
+        </div>
+        <div>
+        <BarGraph>
+          <DataPoint value={50} />
+          <DataPoint value={100} />
+          <DataPoint value={150} />
+          <DataPoint value={200} />
+        </BarGraph>
         </div>
         </div>
       </div>
